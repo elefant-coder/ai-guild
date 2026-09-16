@@ -22,4 +22,5 @@ jobs:
       - run: python3 collector/demo.py --out /tmp/demo && python3 collector/validate.py /tmp/demo/inventory.json && python3 collector/validate.py --stats /tmp/demo/stats.json
       - name: No personal data in the repo
         run: |
-          ! grep -rniE "/Users/[a-z]|/home/[a-z]" --include='*.js' --include='*.mjs' --include='*.ts' --include='*.tsx' --include='*.py' --include='*.json' --include='*.md' --exclude-dir=node_modules --exclude-dir=dist --exclude-dir=generated .
+          # Test fixtures deliberately contain /Users/someone and /home/someone to prove such paths are rejected.
+          ! grep -rniE "/Users/[a-z]|/home/[a-z]" --include='*.js' --include='*.mjs' --include='*.ts' --include='*.tsx' --include='*.py' --include='*.json' --include='*.md' --exclude='*.test.mjs' --exclude-dir=tests --exclude-dir=node_modules --exclude-dir=dist --exclude-dir=generated .
