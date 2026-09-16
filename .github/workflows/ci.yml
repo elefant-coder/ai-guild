@@ -1,0 +1,25 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - run: npm run build
+      - run: npm test
+      - run: python3 -m unittest discover -s collector/tests -t .
+      - run: python3 collector/demo.py --out /tmp/demo && python3 collector/validate.py /tmp/demo/inventory.json && python3 collector/validate.py --stats /tmp/demo/stats.json
+      - name: No personal data in the repo
+        run: |
+          ! grep -rniE "/Users/[a-z]|/home/[a-z]" --include='*.js' --include='*.mjs' --include='*.ts' --include='*.tsx' --include='*.py' --include='*.json' --include='*.md' --exclude-dir=node_modules --exclude-dir=dist --exclude-dir=generated .

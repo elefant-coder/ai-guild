@@ -1,0 +1,15 @@
+{
+  "name": "midnight-arcade",
+  "description": "Deep navy, neon accents, arcade cabinet energy.",
+  "theme": {
+    "preset": "midnight-arcade",
+    "colors": { "ink": "#eef2ff", "muted": "#9aa4c7", "paper": "#141a33", "surface": "#0d1226", "surface2": "#1a2140", "line": "#2a3358", "accent": "#5ef2d6", "accentDark": "#2fc9ad", "warm": "#ff5fa2", "gold": "#ffd166", "edge": "#2a3358", "shadow": "#05081a" },
+    "font": "\"Space Grotesk\", Inter, system-ui, sans-serif",
+    "darkPanel": "#1a2140"
+  },
+  "art": {
+    "style": "glossy neon arcade illustration on a dark navy backdrop, cyan and magenta rim light, slight CRT glow, clean vector shading",
+    "toolStyle": "single glowing arcade-style object on a dark navy backdrop, cyan and magenta rim light, no characters, no text",
+    "constraints": "no text, no logos, no watermark, no interface, no real people, no private data"
+  }
+}

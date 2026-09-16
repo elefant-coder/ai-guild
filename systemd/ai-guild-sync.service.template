@@ -1,0 +1,14 @@
+[Unit]
+Description=AI Guild collector sync (read-only scan + private upload)
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=__REPO__
+ExecStart=__PYTHON__ __REPO__/collector/sync.py --run
+Restart=always
+RestartSec=30
+Environment=PATH=__PATH__
+
+[Install]
+WantedBy=default.target

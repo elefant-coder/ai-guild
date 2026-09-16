@@ -1,0 +1,15 @@
+{
+  "name": "pixel-dungeon",
+  "description": "Retro 16-bit dungeon, chunky pixels, gold on stone.",
+  "theme": {
+    "preset": "pixel-dungeon",
+    "colors": { "ink": "#f3e9d2", "muted": "#a89b82", "paper": "#2b2a33", "surface": "#1f1e26", "surface2": "#33323d", "line": "#45434f", "accent": "#f2b134", "accentDark": "#c98d1a", "warm": "#e3573b", "gold": "#f2b134", "edge": "#45434f", "shadow": "#0f0e14" },
+    "font": "\"Press Start 2P\", \"DotGothic16\", monospace",
+    "darkPanel": "#33323d"
+  },
+  "art": {
+    "style": "crisp 16-bit pixel art sprite on a plain dark stone backdrop, limited palette, gold and ember highlights, readable silhouette",
+    "toolStyle": "single 16-bit pixel art item icon on a plain dark backdrop, gold highlight, no characters, no text",
+    "constraints": "no text, no logos, no watermark, no interface, no real people, no private data"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "paper-atelier",
+  "description": "Warm paper, ink, terracotta. Sketchbook feel.",
+  "theme": {
+    "preset": "paper-atelier",
+    "colors": { "ink": "#26241e", "muted": "#6e6858", "paper": "#fffdf8", "surface": "#faf8f2", "surface2": "#f1ece0", "line": "#e6e0d2", "accent": "#c25b33", "accentDark": "#9a4224", "warm": "#f0a47e", "gold": "#d9a441", "edge": "#e0d8c6", "shadow": "#c9bfa9" },
+    "font": "\"Iowan Old Style\", \"Noto Serif JP\", Georgia, serif",
+    "darkPanel": "#3a2a1f"
+  },
+  "art": {
+    "style": "warm ink-and-watercolor sketchbook illustration on cream paper, terracotta and ochre accents, soft pencil texture, gentle and handmade",
+    "toolStyle": "single hand-drawn object in ink and watercolor on cream paper, terracotta accent, no characters, no text",
+    "constraints": "no text, no logos, no watermark, no interface, no real people, no private data"
+  }
+}

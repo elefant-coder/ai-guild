@@ -1,0 +1,15 @@
+{
+  "name": "lavender-toybox",
+  "description": "White and lavender, rounded, glossy 3D toys. Calm and friendly. (Ships with matching navigation and tool icons.)",
+  "theme": {
+    "preset": "lavender-toybox",
+    "colors": { "ink": "#302449", "muted": "#756984", "paper": "#ffffff", "surface": "#f5f0fc", "surface2": "#ede3fc", "line": "#e7e1f1", "accent": "#7048de", "accentDark": "#5131b1", "warm": "#ff936e", "gold": "#f2c565", "edge": "#d7cdec", "shadow": "#b8a9d4" },
+    "font": "Inter, \"Hiragino Sans\", \"Noto Sans JP\", system-ui, sans-serif",
+    "darkPanel": "#2e1d64"
+  },
+  "art": {
+    "style": "premium polished soft 3D toy-like illustration, white backdrop, lavender and deep-purple accents, coral only as a tiny detail",
+    "toolStyle": "premium polished soft 3D object render, pure white backdrop, white, lavender and deep-purple palette; a single practical object, no animals, no faces, no text",
+    "constraints": "no text, no logos, no watermark, no interface, no real people, no private data"
+  }
+}

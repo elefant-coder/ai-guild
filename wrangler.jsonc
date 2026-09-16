@@ -1,0 +1,21 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ai-guild",
+  "main": "server/cloudflare-worker.js",
+  "compatibility_date": "2026-09-01",
+  "workers_dev": true,
+  "preview_urls": false,
+  "assets": {
+    "directory": "./dist/client",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "durable_objects": {
+    "bindings": [{ "name": "STORE", "class_name": "GuildStore" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["GuildStore"] }],
+  "vars": {
+    "GUILD_STALE_AFTER_SECONDS": "180"
+  }
+  // Secrets (never put them here): wrangler secret put GUILD_VIEW_PASSWORD / GUILD_SESSION_SECRET / GUILD_INGEST_SECRET
+}

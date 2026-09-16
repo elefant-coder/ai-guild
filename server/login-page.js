@@ -1,0 +1,21 @@
+// Passphrase page. Copy comes from guild.config.json so the page matches the guild's name and language.
+import config from '../generated/guild.config.js';
+
+const copy = {
+  en: { title: 'Sign in', label: 'Passphrase', button: 'Enter the guild', error: 'That passphrase does not match. Try again.', note: 'This device stays signed in for 30 days.', tiny: 'A private AI collection' },
+  ja: { title: '入室', label: '合言葉', button: 'ギルドに入る', error: '合言葉が違うようです。もう一度入力してください。', note: 'この端末では30日間ログインを保持します。', tiny: 'プライベートなAIコレクション' },
+};
+const escape = value => String(value ?? '').replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
+
+export function loginHtml(error = false) {
+  const lang = copy[config.language] ? config.language : 'en';
+  const text = copy[lang];
+  const name = escape(config.guild?.name || 'AI Guild');
+  const tagline = escape(config.guild?.tagline || '');
+  const accent = /^#[0-9a-fA-F]{6}$/.test(config.theme?.colors?.accent || '') ? config.theme.colors.accent : '#6436f5';
+  const surface = /^#[0-9a-fA-F]{6}$/.test(config.theme?.colors?.surface || '') ? config.theme.colors.surface : '#f7f4ff';
+  const alert = error ? `<p id="login-error" class="error" role="alert">${text.error}</p>` : '';
+  return `<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="${surface}"><meta name="robots" content="noindex,nofollow,noarchive"><title>${name} · ${text.title}</title><style>
+:root{--accent:${accent};--surface:${surface}}*{box-sizing:border-box}body{margin:0;min-height:100svh;display:grid;place-items:center;padding:24px;background:radial-gradient(circle at 83% 8%,#ffffff88 0 10%,transparent 31%),var(--surface);color:#211b35;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif}main{width:min(100%,408px)}.mark{position:relative;display:grid;place-items:center;width:68px;height:68px;margin:0 auto 25px;border:1px solid #d9d0ee;border-radius:23px;background:linear-gradient(145deg,#fff,#f1edfa);box-shadow:0 12px 28px #0000001c;color:var(--accent);font-weight:900;font-size:25px;letter-spacing:-.08em}.card{padding:31px 27px 25px;border:1px solid #e4ddf1;border-radius:24px;background:#fff;box-shadow:0 20px 55px #38226412;text-align:center}.eyebrow{margin:0 0 8px;color:var(--accent);font-size:10px;font-weight:850;letter-spacing:.16em;text-transform:uppercase}h1{margin:0;font-size:29px;letter-spacing:-.06em;line-height:1.2}p{margin:12px 0 25px;color:#716b83;font-size:14px}form{text-align:left}label{display:block;margin-bottom:7px;font-size:13px;font-weight:800}input{display:block;width:100%;min-height:51px;padding:12px 14px;border:1px solid #dcd4e9;border-radius:13px;background:#fcfbff;color:#211b35;font:inherit}input:focus{outline:3px solid #c8b8ff;outline-offset:2px;border-color:var(--accent)}.error{margin:10px 0 0;padding:10px 12px;border-radius:10px;background:#fff0ea;color:#a65735;font-size:12px;text-align:left}button{width:100%;min-height:51px;margin-top:17px;border:0;border-radius:999px;background:var(--accent);color:#fff;font:800 15px -apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;cursor:pointer;box-shadow:0 9px 18px #0000002b}button:hover{filter:brightness(.92)}button:focus-visible{outline:3px solid #b7a5ff;outline-offset:3px}.note{margin:17px 0 0;color:#938b9f;font-size:11px;text-align:center}.tiny{margin:18px 0 0;color:#a49baa;font-size:10px;text-align:center}@media(max-width:390px){body{padding:16px}.card{padding:27px 20px 22px}.mark{margin-bottom:19px}}
+</style></head><body><main><div class="mark" aria-hidden="true">AI</div><section class="card" aria-labelledby="title"><div class="eyebrow">${name}</div><h1 id="title">${name}</h1><p>${tagline}</p><form method="post" action="/login"><label for="password">${text.label}</label><input id="password" name="password" type="password" autocomplete="current-password" maxlength="256" required${error ? ' aria-describedby="login-error"' : ''}>${alert}<button type="submit">${text.button}</button></form><p class="note">${text.note}</p></section><p class="tiny">${text.tiny}</p></main></body></html>`;
+}

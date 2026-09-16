@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "id": "openai",
+      "label": "OpenAI",
+      "file": "/art/brands/openai.png",
+      "source": "https://github.com/openai",
+      "sourceType": "Official GitHub organization avatar",
+      "downloadedAt": "2026-09-08T02:10:20Z"
+    },
+    {
+      "id": "claude",
+      "label": "Claude",
+      "file": "/art/brands/claude.ico",
+      "source": "https://claude.ai/favicon.ico",
+      "sourceType": "Official Claude web-app favicon",
+      "downloadedAt": "2026-09-08T02:10:20Z"
+    },
+    {
+      "id": "gemini",
+      "label": "Gemini",
+      "file": "/art/brands/gemini.svg",
+      "source": "https://www.gstatic.com/lamda/images/gemini_sparkle_aurora_33f86dc0c0257da337c63.svg",
+      "sourceType": "Official Gemini web-app asset served by Google gstatic",
+      "downloadedAt": "2026-09-08T02:10:20Z"
+    },
+    {
+      "id": "google-workspace",
+      "label": "Google Workspace",
+      "file": "/art/brands/google-workspace.ico",
+      "source": "https://workspace.google.com/favicon.ico",
+      "sourceType": "Official Google Workspace favicon",
+      "downloadedAt": "2026-09-08T02:10:20Z"
+    },
+    {
+      "id": "gmail",
+      "label": "Gmail",
+      "file": "/art/brands/gmail.ico",
+      "source": "https://mail.google.com/favicon.ico",
+      "sourceType": "Official Gmail favicon",
+      "downloadedAt": "2026-09-08T02:10:20Z"
+    },
+    {
+      "id": "google-calendar",
+      "label": "Google Calendar",
+      "file": "/art/brands/google-calendar.svg",
+      "source": "https://www.gstatic.com/images/branding/productlogos/calendar_2026/v2/web/192px.svg",
+      "sourceType": "Official Google Calendar product SVG",
+      "downloadedAt": "2026-09-08T02:10:20Z"
+    },
+    {
+      "id": "google-drive",
+      "label": "Google Drive",
+      "file": "/art/brands/google-drive.ico",
+      "source": "https://drive.google.com/favicon.ico",
+      "sourceType": "Official Google Drive favicon",
+      "downloadedAt": "2026-09-08T02:10:20Z"
+    },
+    {
+      "id": "goose",
+      "label": "Goose",
+      "file": "/art/brands/goose.png",
+      "source": "https://goose-docs.ai/img/logo_light.png",
+      "sourceType": "Official Goose Docs header logo",
+      "downloadedAt": "2026-09-08T02:10:20Z"
+    },
+    {
+      "id": "cmux",
+      "label": "cmux",
+      "file": "/art/brands/cmux.png",
+      "source": "https://cmux.com/",
+      "sourceType": "Application icon of the cmux desktop app (nightly build badge), from the installed app bundle; product site linked as source",
+      "downloadedAt": "2026-09-08T02:10:20Z"
+    },
+    {
+      "id": "xai",
+      "label": "xAI",
+      "file": "/art/brands/xai.png",
+      "source": "https://github.com/xai-org",
+      "sourceType": "Official GitHub organization avatar",
+      "downloadedAt": "2026-09-08T02:10:20Z"
+    },
+    {
+      "id": "github",
+      "label": "GitHub",
+      "file": "/art/brands/github.png",
+      "source": "https://github.com/github",
+      "sourceType": "Official GitHub organization avatar",
+      "downloadedAt": "2026-09-08T02:10:20Z"
+    },
+    {
+      "id": "vercel",
+      "label": "Vercel",
+      "file": "/art/brands/vercel.png",
+      "source": "https://github.com/vercel",
+      "sourceType": "Official GitHub organization avatar",
+      "downloadedAt": "2026-09-08T02:10:20Z"
+    },
+    {
+      "id": "cloudflare",
+      "label": "Cloudflare",
+      "file": "/art/brands/cloudflare.jpg",
+      "source": "https://github.com/cloudflare",
+      "sourceType": "Official GitHub organization avatar",
+      "downloadedAt": "2026-09-08T02:10:20Z"
+    },
+    {
+      "id": "supabase",
+      "label": "Supabase",
+      "file": "/art/brands/supabase.png",
+      "source": "https://github.com/supabase",
+      "sourceType": "Official GitHub organization avatar",
+      "downloadedAt": "2026-09-08T02:10:20Z"
+    },
+    {
+      "id": "tailscale",
+      "label": "Tailscale",
+      "file": "/art/brands/tailscale.png",
+      "source": "https://github.com/tailscale",
+      "sourceType": "Official GitHub organization avatar",
+      "downloadedAt": "2026-09-08T02:10:20Z"
+    },
+    {
+      "id": "salesforce",
+      "label": "Salesforce",
+      "file": "/art/brands/salesforce.png",
+      "source": "https://github.com/salesforcecli",
+      "sourceType": "Official GitHub organization avatar",
+      "downloadedAt": "2026-09-08T02:10:20Z"
+    },
+    {
+      "id": "ffmpeg",
+      "label": "FFmpeg",
+      "file": "/art/brands/ffmpeg.png",
+      "source": "https://github.com/FFmpeg",
+      "sourceType": "Official GitHub organization avatar",
+      "downloadedAt": "2026-09-08T02:10:20Z"
+    },
+    {
+      "id": "freee",
+      "label": "freee",
+      "file": "/art/brands/freee.png",
+      "source": "https://github.com/freee",
+      "sourceType": "Official GitHub organization avatar",
+      "downloadedAt": "2026-09-08T02:10:20Z"
+    },
+    {
+      "id": "adobe",
+      "label": "Adobe",
+      "file": "/art/brands/adobe.png",
+      "source": "https://github.com/adobe",
+      "sourceType": "Official GitHub organization avatar",
+      "downloadedAt": "2026-09-08T02:10:20Z"
+    },
+    {
+      "id": "canva",
+      "label": "Canva",
+      "file": "/art/brands/canva.png",
+      "source": "https://github.com/canva",
+      "sourceType": "Official GitHub organization avatar",
+      "downloadedAt": "2026-09-08T02:10:20Z"
+    },
+    {
+      "id": "fal",
+      "label": "fal.ai",
+      "file": "/art/brands/fal.png",
+      "source": "https://github.com/fal-ai",
+      "sourceType": "Official GitHub organization avatar",
+      "downloadedAt": "2026-09-08T02:10:20Z"
+    },
+    {
+      "id": "figma",
+      "label": "Figma",
+      "file": "/art/brands/figma.png",
+      "source": "https://github.com/figma",
+      "sourceType": "Official GitHub organization avatar",
+      "downloadedAt": "2026-09-08T02:10:20Z"
+    },
+    {
+      "id": "notion",
+      "label": "Notion",
+      "file": "/art/brands/notion.png",
+      "source": "https://github.com/makenotion",
+      "sourceType": "Official GitHub organization avatar",
+      "downloadedAt": "2026-09-08T02:10:20Z"
+    },
+    {
+      "id": "slack",
+      "label": "Slack",
+      "file": "/art/brands/slack.png",
+      "source": "https://github.com/slackhq",
+      "sourceType": "Official GitHub organization avatar",
+      "downloadedAt": "2026-09-08T02:10:20Z"
+    },
+    {
+      "id": "zoom",
+      "label": "Zoom",
+      "file": "/art/brands/zoom.png",
+      "source": "https://github.com/zoom",
+      "sourceType": "Official GitHub organization avatar",
+      "downloadedAt": "2026-09-08T02:10:20Z"
+    },
+    {
+      "id": "lovable",
+      "label": "Lovable",
+      "file": "/art/brands/lovable.ico",
+      "source": "https://lovable.dev/favicon.ico",
+      "sourceType": "Official Lovable website favicon",
+      "downloadedAt": "2026-09-08T02:10:20Z"
+    },
+    {
+      "id": "beeper",
+      "label": "Beeper",
+      "file": "/art/brands/beeper.png",
+      "source": "https://github.com/beeper",
+      "sourceType": "Official GitHub organization avatar",
+      "downloadedAt": "2026-09-08T02:10:20Z"
+    },
+    {
+      "id": "playwright",
+      "label": "Playwright",
+      "file": "/art/brands/playwright.svg",
+      "source": "https://github.com/microsoft/playwright",
+      "sourceType": "Installed official Playwright package SVG",
+      "downloadedAt": "2026-09-08T02:10:20Z"
+    }
+  ],
+  "neutral": {
+    "file": "/art/brands/neutral.svg",
+    "reason": "Neutral glyph for local tools and connections that have no official logo"
+  }
+}

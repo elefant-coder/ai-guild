@@ -1,0 +1,18 @@
+node_modules/
+dist/
+generated/
+data/
+.wrangler/
+.dev.vars
+.env*
+*.log
+.DS_Store
+__pycache__/
+*.pyc
+# Your personalised config and art stay local unless you decide to publish them
+guild.config.json
+public/art/characters/*
+!public/art/characters/.gitkeep
+public/art/characters.json
+public/art/player.*
+data/art-incoming/

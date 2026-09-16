@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "collectedAt": "2026-09-16T03:04:42Z",
+  "scope": "This machine",
+  "timezone": "UTC",
+  "totals": {
+    "input": 4686000,
+    "output": 570000,
+    "cachedInput": 4330000,
+    "total": 5256000
+  },
+  "today": {
+    "input": 397000,
+    "output": 48000,
+    "cachedInput": 362000,
+    "total": 445000
+  },
+  "days": [
+    {
+      "date": "2026-09-10",
+      "input": 700000,
+      "output": 87000,
+      "cachedInput": 650000,
+      "total": 787000
+    },
+    {
+      "date": "2026-09-11",
+      "input": 573000,
+      "output": 67000,
+      "cachedInput": 524000,
+      "total": 640000
+    },
+    {
+      "date": "2026-09-12",
+      "input": 440000,
+      "output": 53000,
+      "cachedInput": 404000,
+      "total": 493000
+    },
+    {
+      "date": "2026-09-13",
+      "input": 1022000,
+      "output": 125000,
+      "cachedInput": 952000,
+      "total": 1147000
+    },
+    {
+      "date": "2026-09-14",
+      "input": 1057000,
+      "output": 125000,
+      "cachedInput": 983000,
+      "total": 1182000
+    },
+    {
+      "date": "2026-09-15",
+      "input": 497000,
+      "output": 65000,
+      "cachedInput": 455000,
+      "total": 562000
+    },
+    {
+      "date": "2026-09-16",
+      "input": 397000,
+      "output": 48000,
+      "cachedInput": 362000,
+      "total": 445000
+    }
+  ],
+  "providers": [
+    {
+      "id": "claude",
+      "name": "Claude Code",
+      "totals": {
+        "input": 3074000,
+        "output": 375000,
+        "cachedInput": 2851000,
+        "total": 3449000
+      },
+      "today": {
+        "input": 268000,
+        "output": 31000,
+        "cachedInput": 244000,
+        "total": 299000
+      },
+      "sessions": 41
+    },
+    {
+      "id": "codex",
+      "name": "Codex",
+      "totals": {
+        "input": 1612000,
+        "output": 195000,
+        "cachedInput": 1479000,
+        "total": 1807000
+      },
+      "today": {
+        "input": 129000,
+        "output": 17000,
+        "cachedInput": 118000,
+        "total": 146000
+      },
+      "sessions": 17
+    }
+  ],
+  "coverage": {
+    "startedAt": "2026-06-18T03:04:42Z",
+    "notes": [
+      "This is demo data. The numbers are invented and describe no real account.",
+      "A real snapshot counts tokens from local session logs only. Prompts and replies are never read."
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "ai-guild",
+  "version": "0.1.0",
+  "description": "A private, game-style catalog of your own AI environment: agents, skills, MCP connections, CLIs, models, scheduled jobs and token usage.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "prepare-config": "node scripts/prepare-config.mjs",
+    "predev": "npm run prepare-config",
+    "dev": "vite --host 127.0.0.1 --port 4317 --strictPort",
+    "prebuild": "npm run prepare-config",
+    "build": "tsc --noEmit && node scripts/clean-build.mjs && vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4317 --strictPort",
+    "pretest": "npm run prepare-config",
+    "test": "node --test server/*.test.mjs",
+    "test:collector": "python3 -m unittest discover -s collector/tests -t .",
+    "scan": "python3 collector/scan.py",
+    "usage": "python3 collector/usage.py",
+    "validate": "python3 collector/validate.py data/inventory.json",
+    "demo": "python3 collector/demo.py",
+    "predeploy": "npm run build",
+    "deploy": "wrangler deploy",
+    "secrets": "node scripts/set-secrets.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "^1.46.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "typescript": "~5.8.3",
+    "vite": "^8.3.0",
+    "wrangler": "^4.132.0"
+  }
+}

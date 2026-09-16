@@ -1,0 +1,2112 @@
+{
+  "collectedAt": "2026-09-16T03:04:42Z",
+  "items": [
+    {
+      "id": "model-claude-opus-5",
+      "name": "claude-opus-5",
+      "category": "model",
+      "summary": "Selected as the default model for deep work.",
+      "tags": [
+        "claude",
+        "model"
+      ],
+      "status": "configured",
+      "statusLabel": "Named in a local configuration file.",
+      "machines": [
+        "main",
+        "laptop"
+      ],
+      "runtimes": [
+        "claude"
+      ],
+      "evidence": [
+        {
+          "source": "~/.claude/settings.json",
+          "detail": "Model key found in configuration",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "model": "claude-opus-5",
+        "provider": "claude",
+        "contextWindow": 200000
+      }
+    },
+    {
+      "id": "model-claude-sonnet-5",
+      "name": "claude-sonnet-5",
+      "category": "model",
+      "summary": "Selected as the everyday model for scoped tasks.",
+      "tags": [
+        "claude",
+        "model"
+      ],
+      "status": "configured",
+      "statusLabel": "Named in a local configuration file.",
+      "machines": [
+        "main",
+        "laptop"
+      ],
+      "runtimes": [
+        "claude"
+      ],
+      "evidence": [
+        {
+          "source": "~/.claude/settings.json",
+          "detail": "Model key found in configuration",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "model": "claude-sonnet-5",
+        "provider": "claude",
+        "contextWindow": 200000
+      }
+    },
+    {
+      "id": "model-gemini-2-5-pro",
+      "name": "gemini-2.5-pro",
+      "category": "model",
+      "summary": "Named in the local Gemini configuration.",
+      "tags": [
+        "gemini",
+        "model"
+      ],
+      "status": "configured",
+      "statusLabel": "Named in a local configuration file.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "gemini"
+      ],
+      "evidence": [
+        {
+          "source": "~/.gemini/settings.json",
+          "detail": "Model key found in configuration",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "model": "gemini-2.5-pro",
+        "provider": "gemini",
+        "contextWindow": 1000000
+      }
+    },
+    {
+      "id": "model-gpt-5-codex",
+      "name": "gpt-5-codex",
+      "category": "model",
+      "summary": "Offered by the local Codex model list.",
+      "tags": [
+        "codex",
+        "model"
+      ],
+      "status": "configured",
+      "statusLabel": "Named in a local configuration file.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "codex"
+      ],
+      "evidence": [
+        {
+          "source": "~/.codex/settings.json",
+          "detail": "Model key found in configuration",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "model": "gpt-5-codex",
+        "provider": "codex",
+        "contextWindow": 400000
+      }
+    },
+    {
+      "id": "cli-claude",
+      "name": "claude",
+      "category": "cli",
+      "summary": "Coding agent in the terminal.",
+      "tags": [
+        "cli"
+      ],
+      "status": "observed",
+      "statusLabel": "Executable found on PATH at scan time.",
+      "machines": [
+        "main",
+        "laptop"
+      ],
+      "runtimes": [
+        "claude"
+      ],
+      "evidence": [
+        {
+          "source": "claude --version",
+          "detail": "claude 2.1.4",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "command": "claude --version",
+      "meta": {
+        "executable": "~/.local/bin/claude"
+      }
+    },
+    {
+      "id": "cli-codex",
+      "name": "codex",
+      "category": "cli",
+      "summary": "Second coding agent, used for long batch work.",
+      "tags": [
+        "cli"
+      ],
+      "status": "observed",
+      "statusLabel": "Executable found on PATH at scan time.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "codex"
+      ],
+      "evidence": [
+        {
+          "source": "codex --version",
+          "detail": "codex 0.48.0",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "command": "codex --version",
+      "meta": {
+        "executable": "~/.local/bin/codex"
+      }
+    },
+    {
+      "id": "cli-ffmpeg",
+      "name": "ffmpeg",
+      "category": "cli",
+      "summary": "Converts audio and video files.",
+      "tags": [
+        "cli"
+      ],
+      "status": "observed",
+      "statusLabel": "Executable found on PATH at scan time.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "ffmpeg"
+      ],
+      "evidence": [
+        {
+          "source": "ffmpeg --version",
+          "detail": "ffmpeg 7.1",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "command": "ffmpeg --version",
+      "meta": {
+        "executable": "~/.local/bin/ffmpeg"
+      }
+    },
+    {
+      "id": "cli-gemini",
+      "name": "gemini",
+      "category": "cli",
+      "summary": "Third agent, used for very large inputs.",
+      "tags": [
+        "cli"
+      ],
+      "status": "observed",
+      "statusLabel": "Executable found on PATH at scan time.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "gemini"
+      ],
+      "evidence": [
+        {
+          "source": "gemini --version",
+          "detail": "gemini 1.9.2",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "command": "gemini --version",
+      "meta": {
+        "executable": "~/.local/bin/gemini"
+      }
+    },
+    {
+      "id": "cli-gh",
+      "name": "gh",
+      "category": "cli",
+      "summary": "GitHub from the command line.",
+      "tags": [
+        "cli"
+      ],
+      "status": "observed",
+      "statusLabel": "Executable found on PATH at scan time.",
+      "machines": [
+        "main",
+        "laptop"
+      ],
+      "runtimes": [
+        "gh"
+      ],
+      "evidence": [
+        {
+          "source": "gh --version",
+          "detail": "gh 2.63.0",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "command": "gh --version",
+      "meta": {
+        "executable": "~/.local/bin/gh"
+      }
+    },
+    {
+      "id": "cli-node",
+      "name": "node",
+      "category": "cli",
+      "summary": "JavaScript runtime for the build.",
+      "tags": [
+        "cli"
+      ],
+      "status": "observed",
+      "statusLabel": "Executable found on PATH at scan time.",
+      "machines": [
+        "main",
+        "laptop"
+      ],
+      "runtimes": [
+        "node"
+      ],
+      "evidence": [
+        {
+          "source": "node --version",
+          "detail": "node 22.9.0",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "command": "node --version",
+      "meta": {
+        "executable": "~/.local/bin/node"
+      }
+    },
+    {
+      "id": "cli-python3",
+      "name": "python3",
+      "category": "cli",
+      "summary": "Runs the collector itself.",
+      "tags": [
+        "cli"
+      ],
+      "status": "observed",
+      "statusLabel": "Executable found on PATH at scan time.",
+      "machines": [
+        "main",
+        "laptop"
+      ],
+      "runtimes": [
+        "python3"
+      ],
+      "evidence": [
+        {
+          "source": "python3 --version",
+          "detail": "python3 3.12.4",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "command": "python3 --version",
+      "meta": {
+        "executable": "~/.local/bin/python3"
+      }
+    },
+    {
+      "id": "cli-wrangler",
+      "name": "wrangler",
+      "category": "cli",
+      "summary": "Deploys the workers that serve this site.",
+      "tags": [
+        "cli"
+      ],
+      "status": "observed",
+      "statusLabel": "Executable found on PATH at scan time.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "wrangler"
+      ],
+      "evidence": [
+        {
+          "source": "wrangler --version",
+          "detail": "wrangler 4.2.1",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "command": "wrangler --version",
+      "meta": {
+        "executable": "~/.local/bin/wrangler"
+      }
+    },
+    {
+      "id": "connection-github",
+      "name": "github",
+      "category": "connection",
+      "summary": "Repositories, issues and pull requests.",
+      "tags": [
+        "mcp",
+        "codex"
+      ],
+      "status": "configured",
+      "statusLabel": "Registered in local configuration. Connection and authentication were not tested.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "mcp"
+      ],
+      "evidence": [
+        {
+          "source": "~/.config/mcp/registry.json",
+          "detail": "Server name found in the registry",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ]
+    },
+    {
+      "id": "connection-notion",
+      "name": "notion",
+      "category": "connection",
+      "summary": "Pages and databases in the team workspace.",
+      "tags": [
+        "mcp",
+        "claude"
+      ],
+      "status": "configured",
+      "statusLabel": "Registered in local configuration. Connection and authentication were not tested.",
+      "machines": [
+        "main",
+        "laptop"
+      ],
+      "runtimes": [
+        "mcp"
+      ],
+      "evidence": [
+        {
+          "source": "~/.config/mcp/registry.json",
+          "detail": "Server name found in the registry",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ]
+    },
+    {
+      "id": "connection-playwright",
+      "name": "playwright",
+      "category": "connection",
+      "summary": "Drives a browser for checks and screenshots.",
+      "tags": [
+        "mcp",
+        "project"
+      ],
+      "status": "configured",
+      "statusLabel": "Declared in a project file. Connection and authentication were not tested.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "mcp"
+      ],
+      "evidence": [
+        {
+          "source": "~/.config/mcp/registry.json",
+          "detail": "Server name found in the registry",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ]
+    },
+    {
+      "id": "connection-postgres",
+      "name": "postgres",
+      "category": "connection",
+      "summary": "Read-only queries against the staging database.",
+      "tags": [
+        "mcp",
+        "project"
+      ],
+      "status": "configured",
+      "statusLabel": "Registered for a project scope. Connection and authentication were not tested.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "mcp"
+      ],
+      "evidence": [
+        {
+          "source": "~/.config/mcp/registry.json",
+          "detail": "Server name found in the registry",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ]
+    },
+    {
+      "id": "connection-sentry",
+      "name": "sentry",
+      "category": "connection",
+      "summary": "Error groups and release health.",
+      "tags": [
+        "plugin",
+        "claude"
+      ],
+      "status": "configured",
+      "statusLabel": "Enabled in local settings. The tools it provides were not contacted.",
+      "machines": [
+        "laptop"
+      ],
+      "runtimes": [
+        "mcp"
+      ],
+      "evidence": [
+        {
+          "source": "~/.config/mcp/registry.json",
+          "detail": "Server name found in the registry",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ]
+    },
+    {
+      "id": "connection-slack",
+      "name": "slack",
+      "category": "connection",
+      "summary": "Channel history and message drafts.",
+      "tags": [
+        "mcp",
+        "claude",
+        "authentication"
+      ],
+      "status": "attention",
+      "statusLabel": "Listed in the authentication cache. Sign-in may be required before use.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "mcp"
+      ],
+      "evidence": [
+        {
+          "source": "~/.config/mcp/registry.json",
+          "detail": "Server name found in the registry",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ]
+    },
+    {
+      "id": "agent-compass",
+      "name": "compass",
+      "category": "agent",
+      "summary": "Maps a change across the whole system before anyone writes code.",
+      "tags": [
+        "agent",
+        "claude"
+      ],
+      "status": "configured",
+      "statusLabel": "Agent definition found locally. It was not started.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "claude"
+      ],
+      "evidence": [
+        {
+          "source": "~/.claude/agents/compass.md",
+          "detail": "Agent frontmatter read",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "title": "Systems architect",
+        "role": "Maps a change across the whole system before anyone writes code.",
+        "strengths": [
+          "Architecture reviews",
+          "Dependency mapping",
+          "Migration plans"
+        ],
+        "exampleTask": "Compare two ways to split this service and recommend one.",
+        "origin": "personal",
+        "modelPolicy": "Definition names model claude-opus-5",
+        "model": "claude-opus-5",
+        "sourceFile": "~/.claude/agents/compass.md"
+      }
+    },
+    {
+      "id": "agent-forge",
+      "name": "forge",
+      "category": "agent",
+      "summary": "Implements a scoped change and keeps the tests green.",
+      "tags": [
+        "agent",
+        "claude"
+      ],
+      "status": "configured",
+      "statusLabel": "Agent definition found locally. It was not started.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "claude"
+      ],
+      "evidence": [
+        {
+          "source": "~/.claude/agents/forge.md",
+          "detail": "Agent frontmatter read",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "title": "Builder",
+        "role": "Implements a scoped change and keeps the tests green.",
+        "strengths": [
+          "Feature work",
+          "Refactoring",
+          "Test coverage"
+        ],
+        "exampleTask": "Add pagination to the results endpoint and cover it with tests.",
+        "origin": "personal",
+        "modelPolicy": "Definition names model claude-sonnet-5",
+        "model": "claude-sonnet-5",
+        "sourceFile": "~/.claude/agents/forge.md"
+      }
+    },
+    {
+      "id": "agent-ledger",
+      "name": "ledger",
+      "category": "agent",
+      "summary": "Reconciles figures and shows the arithmetic behind each total.",
+      "tags": [
+        "agent",
+        "claude"
+      ],
+      "status": "configured",
+      "statusLabel": "Agent definition found locally. It was not started.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "claude"
+      ],
+      "evidence": [
+        {
+          "source": "~/.claude/agents/ledger.md",
+          "detail": "Agent frontmatter read",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "title": "Numbers analyst",
+        "role": "Reconciles figures and shows the arithmetic behind each total.",
+        "strengths": [
+          "Reconciliation",
+          "Forecasts",
+          "Spreadsheet models"
+        ],
+        "exampleTask": "Check last quarter's totals against the exported statements.",
+        "origin": "personal",
+        "modelPolicy": "Definition names model gpt-5-codex",
+        "model": "gpt-5-codex",
+        "sourceFile": "~/.claude/agents/ledger.md"
+      }
+    },
+    {
+      "id": "agent-muse",
+      "name": "muse",
+      "category": "agent",
+      "summary": "Designs screens and states, then hands over the tokens to build them.",
+      "tags": [
+        "agent",
+        "claude"
+      ],
+      "status": "configured",
+      "statusLabel": "Agent definition found locally. It was not started.",
+      "machines": [
+        "laptop"
+      ],
+      "runtimes": [
+        "claude"
+      ],
+      "evidence": [
+        {
+          "source": "~/.claude/agents/muse.md",
+          "detail": "Agent frontmatter read",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "title": "Interface designer",
+        "role": "Designs screens and states, then hands over the tokens to build them.",
+        "strengths": [
+          "Layout and hierarchy",
+          "Design tokens",
+          "Accessibility"
+        ],
+        "exampleTask": "Draft the empty, loading and error states for this table.",
+        "origin": "personal",
+        "modelPolicy": "Definition names model claude-sonnet-5",
+        "model": "claude-sonnet-5",
+        "sourceFile": "~/.claude/agents/muse.md"
+      }
+    },
+    {
+      "id": "agent-prism",
+      "name": "prism",
+      "category": "agent",
+      "summary": "Prepares, crops and converts image assets for every surface.",
+      "tags": [
+        "agent",
+        "claude"
+      ],
+      "status": "configured",
+      "statusLabel": "Agent definition found locally. It was not started.",
+      "machines": [
+        "laptop"
+      ],
+      "runtimes": [
+        "claude"
+      ],
+      "evidence": [
+        {
+          "source": "~/.claude/agents/prism.md",
+          "detail": "Agent frontmatter read",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "title": "Image wrangler",
+        "role": "Prepares, crops and converts image assets for every surface.",
+        "strengths": [
+          "Batch conversion",
+          "Sprite sheets",
+          "Asset naming"
+        ],
+        "exampleTask": "Convert these screenshots to WebP at two sizes.",
+        "origin": "personal",
+        "modelPolicy": "Definition names model gemini-2.5-pro",
+        "model": "gemini-2.5-pro",
+        "sourceFile": "~/.claude/agents/prism.md"
+      }
+    },
+    {
+      "id": "agent-quill",
+      "name": "quill",
+      "category": "agent",
+      "summary": "Turns rough notes into copy that reads like a person wrote it.",
+      "tags": [
+        "agent",
+        "claude"
+      ],
+      "status": "configured",
+      "statusLabel": "Agent definition found locally. It was not started.",
+      "machines": [
+        "main",
+        "laptop"
+      ],
+      "runtimes": [
+        "claude"
+      ],
+      "evidence": [
+        {
+          "source": "~/.claude/agents/quill.md",
+          "detail": "Agent frontmatter read",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "title": "Editor",
+        "role": "Turns rough notes into copy that reads like a person wrote it.",
+        "strengths": [
+          "Release notes",
+          "Documentation",
+          "Tone and structure"
+        ],
+        "exampleTask": "Rewrite this changelog for people who do not know the codebase.",
+        "origin": "personal",
+        "modelPolicy": "Definition names model claude-sonnet-5",
+        "model": "claude-sonnet-5",
+        "sourceFile": "~/.claude/agents/quill.md"
+      }
+    },
+    {
+      "id": "agent-scout",
+      "name": "scout",
+      "category": "agent",
+      "summary": "Gathers current sources and reports what actually holds up.",
+      "tags": [
+        "agent",
+        "claude"
+      ],
+      "status": "configured",
+      "statusLabel": "Agent definition found locally. It was not started.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "claude"
+      ],
+      "evidence": [
+        {
+          "source": "~/.claude/agents/scout.md",
+          "detail": "Agent frontmatter read",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "title": "Researcher",
+        "role": "Gathers current sources and reports what actually holds up.",
+        "strengths": [
+          "Source gathering",
+          "Comparison tables",
+          "Cited summaries"
+        ],
+        "exampleTask": "Find out which queue libraries still ship security updates.",
+        "origin": "personal",
+        "modelPolicy": "Definition names model gemini-2.5-pro",
+        "model": "gemini-2.5-pro",
+        "sourceFile": "~/.claude/agents/scout.md"
+      }
+    },
+    {
+      "id": "agent-sentinel",
+      "name": "sentinel",
+      "category": "agent",
+      "summary": "Reads a diff for the mistakes that become incidents.",
+      "tags": [
+        "agent",
+        "claude"
+      ],
+      "status": "configured",
+      "statusLabel": "Agent definition found locally. It was not started.",
+      "machines": [
+        "main",
+        "laptop"
+      ],
+      "runtimes": [
+        "claude"
+      ],
+      "evidence": [
+        {
+          "source": "~/.claude/agents/sentinel.md",
+          "detail": "Agent frontmatter read",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "title": "Security reviewer",
+        "role": "Reads a diff for the mistakes that become incidents.",
+        "strengths": [
+          "Threat modelling",
+          "Dependency review",
+          "Secret handling"
+        ],
+        "exampleTask": "Review this authentication change before it ships.",
+        "origin": "personal",
+        "modelPolicy": "Definition names model claude-opus-5",
+        "model": "claude-opus-5",
+        "sourceFile": "~/.claude/agents/sentinel.md"
+      }
+    },
+    {
+      "id": "harness-claude-instructions",
+      "name": "Claude instructions",
+      "category": "harness",
+      "summary": "Global instruction file applied to every Claude Code session.",
+      "tags": [
+        "harness",
+        "instructions"
+      ],
+      "status": "configured",
+      "statusLabel": "Configured locally. Command text is not collected.",
+      "machines": [
+        "main",
+        "laptop"
+      ],
+      "runtimes": [
+        "claude"
+      ],
+      "evidence": [
+        {
+          "source": "~/.claude/CLAUDE.md",
+          "detail": "Configuration read",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "sourceFile": "~/.claude/CLAUDE.md"
+      }
+    },
+    {
+      "id": "harness-hook-pretooluse",
+      "name": "PreToolUse",
+      "category": "harness",
+      "summary": "Checks risky commands before a tool runs.",
+      "tags": [
+        "harness",
+        "hook"
+      ],
+      "status": "configured",
+      "statusLabel": "Configured locally. Command text is not collected.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "claude"
+      ],
+      "evidence": [
+        {
+          "source": "~/.claude/settings.json",
+          "detail": "Configuration read",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "event": "PreToolUse",
+        "hookGroups": 3
+      }
+    },
+    {
+      "id": "harness-rule-review-checklist",
+      "name": "review-checklist",
+      "category": "harness",
+      "summary": "Every change is reviewed against correctness, tests and rollback.",
+      "tags": [
+        "harness",
+        "rules"
+      ],
+      "status": "configured",
+      "statusLabel": "Configured locally. Command text is not collected.",
+      "machines": [
+        "main",
+        "laptop"
+      ],
+      "runtimes": [
+        "claude"
+      ],
+      "evidence": [
+        {
+          "source": "~/.claude/rules/review-checklist.md",
+          "detail": "Configuration read",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "sourceFile": "~/.claude/rules/review-checklist.md"
+      }
+    },
+    {
+      "id": "harness-hook-sessionstart",
+      "name": "SessionStart",
+      "category": "harness",
+      "summary": "Loads project context whenever a session begins.",
+      "tags": [
+        "harness",
+        "hook"
+      ],
+      "status": "configured",
+      "statusLabel": "Configured locally. Command text is not collected.",
+      "machines": [
+        "main",
+        "laptop"
+      ],
+      "runtimes": [
+        "claude"
+      ],
+      "evidence": [
+        {
+          "source": "~/.claude/settings.json",
+          "detail": "Configuration read",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "event": "SessionStart",
+        "hookGroups": 2
+      }
+    },
+    {
+      "id": "harness-hook-stop",
+      "name": "Stop",
+      "category": "harness",
+      "summary": "Files a short work note when a session ends.",
+      "tags": [
+        "harness",
+        "hook"
+      ],
+      "status": "configured",
+      "statusLabel": "Configured locally. Command text is not collected.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "claude"
+      ],
+      "evidence": [
+        {
+          "source": "~/.claude/settings.json",
+          "detail": "Configuration read",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "event": "Stop",
+        "hookGroups": 1
+      }
+    },
+    {
+      "id": "harness-rule-writing-style",
+      "name": "writing-style",
+      "category": "harness",
+      "summary": "Short sentences, no filler, one idea at a time.",
+      "tags": [
+        "harness",
+        "rules"
+      ],
+      "status": "configured",
+      "statusLabel": "Configured locally. Command text is not collected.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "claude"
+      ],
+      "evidence": [
+        {
+          "source": "~/.claude/rules/writing-style.md",
+          "detail": "Configuration read",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "sourceFile": "~/.claude/rules/writing-style.md"
+      }
+    },
+    {
+      "id": "skill-api-contract",
+      "name": "api-contract",
+      "category": "skill",
+      "summary": "Draft and review an API contract before implementation starts.",
+      "tags": [
+        "shared"
+      ],
+      "status": "configured",
+      "statusLabel": "SKILL.md found locally. Execution was not attempted.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "shared"
+      ],
+      "evidence": [
+        {
+          "source": "~/.agents/skills/api-contract/SKILL.md",
+          "detail": "SKILL.md found on disk",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "sources": [
+          {
+            "kind": "shared",
+            "label": "Shared skills"
+          }
+        ],
+        "sourceCount": 1,
+        "descriptionOriginal": "Draft and review an API contract before implementation starts.",
+        "summarySource": "frontmatter"
+      }
+    },
+    {
+      "id": "skill-backup-check",
+      "name": "backup-check",
+      "category": "skill",
+      "summary": "Verify that backups exist and can actually be restored.",
+      "tags": [
+        "shared"
+      ],
+      "status": "configured",
+      "statusLabel": "SKILL.md found locally. Execution was not attempted.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "shared"
+      ],
+      "evidence": [
+        {
+          "source": "~/.agents/skills/backup-check/SKILL.md",
+          "detail": "SKILL.md found on disk",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "sources": [
+          {
+            "kind": "shared",
+            "label": "Shared skills"
+          }
+        ],
+        "sourceCount": 1,
+        "descriptionOriginal": "Verify that backups exist and can actually be restored.",
+        "summarySource": "frontmatter"
+      }
+    },
+    {
+      "id": "skill-chart-builder",
+      "name": "chart-builder",
+      "category": "skill",
+      "summary": "Build a chart that answers one specific question.",
+      "tags": [
+        "shared"
+      ],
+      "status": "configured",
+      "statusLabel": "SKILL.md found locally. Execution was not attempted.",
+      "machines": [
+        "main",
+        "laptop"
+      ],
+      "runtimes": [
+        "shared"
+      ],
+      "evidence": [
+        {
+          "source": "~/.agents/skills/chart-builder/SKILL.md",
+          "detail": "SKILL.md found on disk",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "sources": [
+          {
+            "kind": "shared",
+            "label": "Shared skills"
+          }
+        ],
+        "sourceCount": 1,
+        "descriptionOriginal": "Build a chart that answers one specific question.",
+        "summarySource": "frontmatter"
+      }
+    },
+    {
+      "id": "skill-cost-report",
+      "name": "cost-report",
+      "category": "skill",
+      "summary": "Explain last month's infrastructure bill line by line.",
+      "tags": [
+        "claude"
+      ],
+      "status": "configured",
+      "statusLabel": "SKILL.md found locally. Execution was not attempted.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "claude"
+      ],
+      "evidence": [
+        {
+          "source": "~/.agents/skills/cost-report/SKILL.md",
+          "detail": "SKILL.md found on disk",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "sources": [
+          {
+            "kind": "claude",
+            "label": "Claude skills"
+          }
+        ],
+        "sourceCount": 1,
+        "descriptionOriginal": "Explain last month's infrastructure bill line by line.",
+        "summarySource": "frontmatter"
+      }
+    },
+    {
+      "id": "skill-data-cleanup",
+      "name": "data-cleanup",
+      "category": "skill",
+      "summary": "Normalise a messy export into a tidy table.",
+      "tags": [
+        "shared"
+      ],
+      "status": "configured",
+      "statusLabel": "SKILL.md found locally. Execution was not attempted.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "shared"
+      ],
+      "evidence": [
+        {
+          "source": "~/.agents/skills/data-cleanup/SKILL.md",
+          "detail": "SKILL.md found on disk",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "sources": [
+          {
+            "kind": "shared",
+            "label": "Shared skills"
+          }
+        ],
+        "sourceCount": 1,
+        "descriptionOriginal": "Normalise a messy export into a tidy table.",
+        "summarySource": "frontmatter"
+      }
+    },
+    {
+      "id": "skill-db-migration",
+      "name": "db-migration",
+      "category": "skill",
+      "summary": "Plan a schema migration with a rollback path.",
+      "tags": [
+        "codex"
+      ],
+      "status": "configured",
+      "statusLabel": "SKILL.md found locally. Execution was not attempted.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "codex"
+      ],
+      "evidence": [
+        {
+          "source": "~/.agents/skills/db-migration/SKILL.md",
+          "detail": "SKILL.md found on disk",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "sources": [
+          {
+            "kind": "codex",
+            "label": "Codex skills"
+          }
+        ],
+        "sourceCount": 1,
+        "descriptionOriginal": "Plan a schema migration with a rollback path.",
+        "summarySource": "frontmatter"
+      }
+    },
+    {
+      "id": "skill-dependency-audit",
+      "name": "dependency-audit",
+      "category": "skill",
+      "summary": "Check dependencies for stale and risky versions.",
+      "tags": [
+        "codex"
+      ],
+      "status": "configured",
+      "statusLabel": "SKILL.md found locally. Execution was not attempted.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "codex"
+      ],
+      "evidence": [
+        {
+          "source": "~/.agents/skills/dependency-audit/SKILL.md",
+          "detail": "SKILL.md found on disk",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "sources": [
+          {
+            "kind": "codex",
+            "label": "Codex skills"
+          }
+        ],
+        "sourceCount": 1,
+        "descriptionOriginal": "Check dependencies for stale and risky versions.",
+        "summarySource": "frontmatter"
+      }
+    },
+    {
+      "id": "skill-design-tokens",
+      "name": "design-tokens",
+      "category": "skill",
+      "summary": "Extract design tokens from a mockup and keep them in sync.",
+      "tags": [
+        "claude"
+      ],
+      "status": "configured",
+      "statusLabel": "SKILL.md found locally. Execution was not attempted.",
+      "machines": [
+        "laptop"
+      ],
+      "runtimes": [
+        "claude"
+      ],
+      "evidence": [
+        {
+          "source": "~/.agents/skills/design-tokens/SKILL.md",
+          "detail": "SKILL.md found on disk",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "sources": [
+          {
+            "kind": "claude",
+            "label": "Claude skills"
+          }
+        ],
+        "sourceCount": 1,
+        "descriptionOriginal": "Extract design tokens from a mockup and keep them in sync.",
+        "summarySource": "frontmatter"
+      }
+    },
+    {
+      "id": "skill-image-prep",
+      "name": "image-prep",
+      "category": "skill",
+      "summary": "Resize and convert images for the web.",
+      "tags": [
+        "plugin"
+      ],
+      "status": "configured",
+      "statusLabel": "SKILL.md found locally. Execution was not attempted.",
+      "machines": [
+        "laptop"
+      ],
+      "runtimes": [
+        "claude"
+      ],
+      "evidence": [
+        {
+          "source": "~/.agents/skills/image-prep/SKILL.md",
+          "detail": "SKILL.md found on disk",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "sources": [
+          {
+            "kind": "plugin",
+            "label": "Plugin skills"
+          }
+        ],
+        "sourceCount": 1,
+        "descriptionOriginal": "Resize and convert images for the web.",
+        "summarySource": "frontmatter"
+      }
+    },
+    {
+      "id": "skill-incident-review",
+      "name": "incident-review",
+      "category": "skill",
+      "summary": "Write up an incident with a timeline and follow-up actions.",
+      "tags": [
+        "shared"
+      ],
+      "status": "configured",
+      "statusLabel": "SKILL.md found locally. Execution was not attempted.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "shared"
+      ],
+      "evidence": [
+        {
+          "source": "~/.agents/skills/incident-review/SKILL.md",
+          "detail": "SKILL.md found on disk",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "sources": [
+          {
+            "kind": "shared",
+            "label": "Shared skills"
+          }
+        ],
+        "sourceCount": 1,
+        "descriptionOriginal": "Write up an incident with a timeline and follow-up actions.",
+        "summarySource": "frontmatter"
+      }
+    },
+    {
+      "id": "skill-meeting-notes",
+      "name": "meeting-notes",
+      "category": "skill",
+      "summary": "Turn a transcript into decisions and owners.",
+      "tags": [
+        "shared"
+      ],
+      "status": "configured",
+      "statusLabel": "SKILL.md found locally. Execution was not attempted.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "shared"
+      ],
+      "evidence": [
+        {
+          "source": "~/.agents/skills/meeting-notes/SKILL.md",
+          "detail": "SKILL.md found on disk",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "sources": [
+          {
+            "kind": "shared",
+            "label": "Shared skills"
+          }
+        ],
+        "sourceCount": 1,
+        "descriptionOriginal": "Turn a transcript into decisions and owners.",
+        "summarySource": "frontmatter"
+      }
+    },
+    {
+      "id": "skill-onboarding-guide",
+      "name": "onboarding-guide",
+      "category": "skill",
+      "summary": "Write the first-week guide for a new contributor.",
+      "tags": [
+        "claude"
+      ],
+      "status": "configured",
+      "statusLabel": "SKILL.md found locally. Execution was not attempted.",
+      "machines": [
+        "laptop"
+      ],
+      "runtimes": [
+        "claude"
+      ],
+      "evidence": [
+        {
+          "source": "~/.agents/skills/onboarding-guide/SKILL.md",
+          "detail": "SKILL.md found on disk",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "sources": [
+          {
+            "kind": "claude",
+            "label": "Claude skills"
+          }
+        ],
+        "sourceCount": 1,
+        "descriptionOriginal": "Write the first-week guide for a new contributor.",
+        "summarySource": "frontmatter"
+      }
+    },
+    {
+      "id": "skill-perf-budget",
+      "name": "perf-budget",
+      "category": "skill",
+      "summary": "Set and check a performance budget for a page.",
+      "tags": [
+        "claude"
+      ],
+      "status": "configured",
+      "statusLabel": "SKILL.md found locally. Execution was not attempted.",
+      "machines": [
+        "laptop"
+      ],
+      "runtimes": [
+        "claude"
+      ],
+      "evidence": [
+        {
+          "source": "~/.agents/skills/perf-budget/SKILL.md",
+          "detail": "SKILL.md found on disk",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "sources": [
+          {
+            "kind": "claude",
+            "label": "Claude skills"
+          }
+        ],
+        "sourceCount": 1,
+        "descriptionOriginal": "Set and check a performance budget for a page.",
+        "summarySource": "frontmatter"
+      }
+    },
+    {
+      "id": "skill-release-notes",
+      "name": "release-notes",
+      "category": "skill",
+      "summary": "Turn merged pull requests into readable release notes.",
+      "tags": [
+        "shared"
+      ],
+      "status": "configured",
+      "statusLabel": "SKILL.md found locally. Execution was not attempted.",
+      "machines": [
+        "main",
+        "laptop"
+      ],
+      "runtimes": [
+        "shared"
+      ],
+      "evidence": [
+        {
+          "source": "~/.agents/skills/release-notes/SKILL.md",
+          "detail": "SKILL.md found on disk",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "sources": [
+          {
+            "kind": "shared",
+            "label": "Shared skills"
+          }
+        ],
+        "sourceCount": 1,
+        "descriptionOriginal": "Turn merged pull requests into readable release notes.",
+        "summarySource": "frontmatter"
+      }
+    },
+    {
+      "id": "skill-screenshot-tour",
+      "name": "screenshot-tour",
+      "category": "skill",
+      "summary": "Capture a guided screenshot tour of a running app.",
+      "tags": [
+        "plugin"
+      ],
+      "status": "configured",
+      "statusLabel": "SKILL.md found locally. Execution was not attempted.",
+      "machines": [
+        "laptop"
+      ],
+      "runtimes": [
+        "claude"
+      ],
+      "evidence": [
+        {
+          "source": "~/.agents/skills/screenshot-tour/SKILL.md",
+          "detail": "SKILL.md found on disk",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "sources": [
+          {
+            "kind": "plugin",
+            "label": "Plugin skills"
+          }
+        ],
+        "sourceCount": 1,
+        "descriptionOriginal": "Capture a guided screenshot tour of a running app.",
+        "summarySource": "frontmatter"
+      }
+    },
+    {
+      "id": "skill-search-index",
+      "name": "search-index",
+      "category": "skill",
+      "summary": "Rebuild a search index and compare the results before and after.",
+      "tags": [
+        "shared"
+      ],
+      "status": "configured",
+      "statusLabel": "SKILL.md found locally. Execution was not attempted.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "shared"
+      ],
+      "evidence": [
+        {
+          "source": "~/.agents/skills/search-index/SKILL.md",
+          "detail": "SKILL.md found on disk",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "sources": [
+          {
+            "kind": "shared",
+            "label": "Shared skills"
+          }
+        ],
+        "sourceCount": 1,
+        "descriptionOriginal": "Rebuild a search index and compare the results before and after.",
+        "summarySource": "frontmatter"
+      }
+    },
+    {
+      "id": "skill-secret-scan",
+      "name": "secret-scan",
+      "category": "skill",
+      "summary": "Look for credentials that should never have been committed.",
+      "tags": [
+        "codex"
+      ],
+      "status": "configured",
+      "statusLabel": "SKILL.md found locally. Execution was not attempted.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "codex"
+      ],
+      "evidence": [
+        {
+          "source": "~/.agents/skills/secret-scan/SKILL.md",
+          "detail": "SKILL.md found on disk",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "sources": [
+          {
+            "kind": "codex",
+            "label": "Codex skills"
+          }
+        ],
+        "sourceCount": 1,
+        "descriptionOriginal": "Look for credentials that should never have been committed.",
+        "summarySource": "frontmatter"
+      }
+    },
+    {
+      "id": "skill-test-plan",
+      "name": "test-plan",
+      "category": "skill",
+      "summary": "Produce a test plan from a change description.",
+      "tags": [
+        "codex"
+      ],
+      "status": "configured",
+      "statusLabel": "SKILL.md found locally. Execution was not attempted.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "codex"
+      ],
+      "evidence": [
+        {
+          "source": "~/.agents/skills/test-plan/SKILL.md",
+          "detail": "SKILL.md found on disk",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "sources": [
+          {
+            "kind": "codex",
+            "label": "Codex skills"
+          }
+        ],
+        "sourceCount": 1,
+        "descriptionOriginal": "Produce a test plan from a change description.",
+        "summarySource": "frontmatter"
+      }
+    },
+    {
+      "id": "skill-video-cutdown",
+      "name": "video-cutdown",
+      "category": "skill",
+      "summary": "Cut a long recording into short clips with captions.",
+      "tags": [
+        "plugin"
+      ],
+      "status": "configured",
+      "statusLabel": "SKILL.md found locally. Execution was not attempted.",
+      "machines": [
+        "laptop"
+      ],
+      "runtimes": [
+        "claude"
+      ],
+      "evidence": [
+        {
+          "source": "~/.agents/skills/video-cutdown/SKILL.md",
+          "detail": "SKILL.md found on disk",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "sources": [
+          {
+            "kind": "plugin",
+            "label": "Plugin skills"
+          }
+        ],
+        "sourceCount": 1,
+        "descriptionOriginal": "Cut a long recording into short clips with captions.",
+        "summarySource": "frontmatter"
+      }
+    },
+    {
+      "id": "skill-weekly-digest",
+      "name": "weekly-digest",
+      "category": "skill",
+      "summary": "Summarise the week's work for people who were not there.",
+      "tags": [
+        "shared"
+      ],
+      "status": "configured",
+      "statusLabel": "SKILL.md found locally. Execution was not attempted.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "shared"
+      ],
+      "evidence": [
+        {
+          "source": "~/.agents/skills/weekly-digest/SKILL.md",
+          "detail": "SKILL.md found on disk",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "meta": {
+        "sources": [
+          {
+            "kind": "shared",
+            "label": "Shared skills"
+          }
+        ],
+        "sourceCount": 1,
+        "descriptionOriginal": "Summarise the week's work for people who were not there.",
+        "summarySource": "frontmatter"
+      }
+    },
+    {
+      "id": "automation-backup-verify",
+      "name": "backup-verify",
+      "category": "automation",
+      "summary": "Restores a sample from last night's backup.",
+      "tags": [
+        "launchd",
+        "calendar"
+      ],
+      "status": "attention",
+      "statusLabel": "The scheduler reported exit code 1 for the last run.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "launchd"
+      ],
+      "evidence": [
+        {
+          "source": "~/Library/LaunchAgents/local.backup-verify.plist",
+          "detail": "Trigger metadata and scheduler state read",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "schedule": {
+        "kind": "calendar",
+        "label": "Runs on a calendar schedule",
+        "calendar": {
+          "Weekday": 1,
+          "Hour": 3
+        },
+        "loaded": true,
+        "running": false,
+        "lastExitCode": 1
+      },
+      "meta": {
+        "runAtLoad": false,
+        "label": "local.backup-verify",
+        "sourceFile": "~/Library/LaunchAgents/local.backup-verify.plist"
+      }
+    },
+    {
+      "id": "automation-daily-digest",
+      "name": "daily-digest",
+      "category": "automation",
+      "summary": "Builds the morning digest from yesterday's work.",
+      "tags": [
+        "launchd",
+        "calendar"
+      ],
+      "status": "observed",
+      "statusLabel": "Loaded in the scheduler and waiting for its next trigger.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "launchd"
+      ],
+      "evidence": [
+        {
+          "source": "~/Library/LaunchAgents/local.daily-digest.plist",
+          "detail": "Trigger metadata and scheduler state read",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "schedule": {
+        "kind": "calendar",
+        "label": "Runs on a calendar schedule",
+        "calendar": {
+          "Hour": 7,
+          "Minute": 30
+        },
+        "loaded": true,
+        "running": false,
+        "lastExitCode": 0
+      },
+      "meta": {
+        "runAtLoad": false,
+        "label": "local.daily-digest",
+        "sourceFile": "~/Library/LaunchAgents/local.daily-digest.plist"
+      }
+    },
+    {
+      "id": "automation-index-rebuild",
+      "name": "index-rebuild",
+      "category": "automation",
+      "summary": "Rebuilds the local search index overnight.",
+      "tags": [
+        "launchd",
+        "interval"
+      ],
+      "status": "observed",
+      "statusLabel": "Loaded in the scheduler and waiting for its next trigger.",
+      "machines": [
+        "laptop"
+      ],
+      "runtimes": [
+        "launchd"
+      ],
+      "evidence": [
+        {
+          "source": "~/Library/LaunchAgents/local.index-rebuild.plist",
+          "detail": "Trigger metadata and scheduler state read",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "schedule": {
+        "kind": "interval",
+        "label": "Runs every 21600 seconds",
+        "intervalSeconds": 21600,
+        "loaded": true,
+        "running": false,
+        "lastExitCode": 0
+      },
+      "meta": {
+        "runAtLoad": false,
+        "label": "local.index-rebuild",
+        "sourceFile": "~/Library/LaunchAgents/local.index-rebuild.plist"
+      }
+    },
+    {
+      "id": "automation-inventory-sync",
+      "name": "inventory-sync",
+      "category": "automation",
+      "summary": "Keeps this site in step with the machine.",
+      "tags": [
+        "launchd",
+        "resident"
+      ],
+      "status": "observed",
+      "statusLabel": "Loaded in the scheduler and running right now.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "launchd"
+      ],
+      "evidence": [
+        {
+          "source": "~/Library/LaunchAgents/local.inventory-sync.plist",
+          "detail": "Trigger metadata and scheduler state read",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "schedule": {
+        "kind": "resident",
+        "label": "Kept running as a resident process",
+        "loaded": true,
+        "running": true,
+        "lastExitCode": 0
+      },
+      "meta": {
+        "runAtLoad": false,
+        "label": "local.inventory-sync",
+        "sourceFile": "~/Library/LaunchAgents/local.inventory-sync.plist"
+      }
+    },
+    {
+      "id": "automation-link-check",
+      "name": "link-check",
+      "category": "automation",
+      "summary": "Checks the public site for broken links.",
+      "tags": [
+        "launchd",
+        "calendar"
+      ],
+      "status": "observed",
+      "statusLabel": "Present in the crontab. The command text is not collected.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "launchd"
+      ],
+      "evidence": [
+        {
+          "source": "~/Library/LaunchAgents/local.link-check.plist",
+          "detail": "Trigger metadata and scheduler state read",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "schedule": {
+        "kind": "calendar",
+        "label": "Runs on a cron schedule",
+        "calendar": {
+          "expression": "0 6 * * 1"
+        },
+        "loaded": true,
+        "running": false
+      },
+      "meta": {
+        "runAtLoad": false,
+        "label": "local.link-check",
+        "sourceFile": "~/Library/LaunchAgents/local.link-check.plist"
+      }
+    },
+    {
+      "id": "automation-log-rotate",
+      "name": "log-rotate",
+      "category": "automation",
+      "summary": "Trims local logs so they stay small.",
+      "tags": [
+        "launchd",
+        "other"
+      ],
+      "status": "observed",
+      "statusLabel": "Loaded in the scheduler with a trigger this scan does not read.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "launchd"
+      ],
+      "evidence": [
+        {
+          "source": "~/Library/LaunchAgents/local.log-rotate.plist",
+          "detail": "Trigger metadata and scheduler state read",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "schedule": {
+        "kind": "other",
+        "label": "Trigger not captured by this scan",
+        "loaded": true,
+        "running": false
+      },
+      "meta": {
+        "runAtLoad": false,
+        "label": "local.log-rotate",
+        "sourceFile": "~/Library/LaunchAgents/local.log-rotate.plist"
+      }
+    },
+    {
+      "id": "automation-photo-import",
+      "name": "photo-import",
+      "category": "automation",
+      "summary": "Imports and converts new screenshots.",
+      "tags": [
+        "launchd",
+        "ondemand"
+      ],
+      "status": "configured",
+      "statusLabel": "Job file found. It is not currently loaded in the scheduler.",
+      "machines": [
+        "laptop"
+      ],
+      "runtimes": [
+        "launchd"
+      ],
+      "evidence": [
+        {
+          "source": "~/Library/LaunchAgents/local.photo-import.plist",
+          "detail": "Trigger metadata and scheduler state read",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "schedule": {
+        "kind": "ondemand",
+        "label": "Runs when loaded at login",
+        "loaded": false,
+        "running": false
+      },
+      "meta": {
+        "runAtLoad": true,
+        "label": "local.photo-import",
+        "sourceFile": "~/Library/LaunchAgents/local.photo-import.plist"
+      }
+    },
+    {
+      "id": "automation-private-4f2a91c0b7de",
+      "name": "Private job",
+      "category": "automation",
+      "summary": "Scheduled job registered with the user launchd scheduler.",
+      "tags": [
+        "launchd",
+        "interval"
+      ],
+      "status": "observed",
+      "statusLabel": "Loaded in the scheduler and waiting for its next trigger.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "launchd"
+      ],
+      "evidence": [
+        {
+          "source": "~/Library/LaunchAgents (label withheld)",
+          "detail": "Trigger metadata and scheduler state read",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "schedule": {
+        "kind": "interval",
+        "label": "Runs every 3600 seconds",
+        "intervalSeconds": 3600,
+        "loaded": true,
+        "running": false,
+        "lastExitCode": 0
+      },
+      "meta": {
+        "runAtLoad": false,
+        "schedulerId": "automation-private-4f2a91c0b7de"
+      }
+    },
+    {
+      "id": "automation-usage-refresh",
+      "name": "usage-refresh",
+      "category": "automation",
+      "summary": "Recomputes the token usage snapshot.",
+      "tags": [
+        "launchd",
+        "interval"
+      ],
+      "status": "observed",
+      "statusLabel": "Loaded in the scheduler and waiting for its next trigger.",
+      "machines": [
+        "main"
+      ],
+      "runtimes": [
+        "launchd"
+      ],
+      "evidence": [
+        {
+          "source": "~/Library/LaunchAgents/local.usage-refresh.plist",
+          "detail": "Trigger metadata and scheduler state read",
+          "checkedAt": "2026-09-16T03:04:42Z"
+        }
+      ],
+      "schedule": {
+        "kind": "interval",
+        "label": "Runs every 900 seconds",
+        "intervalSeconds": 900,
+        "loaded": true,
+        "running": false,
+        "lastExitCode": 0
+      },
+      "meta": {
+        "runAtLoad": false,
+        "label": "local.usage-refresh",
+        "sourceFile": "~/Library/LaunchAgents/local.usage-refresh.plist"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "name": "runtime",
+      "collectedAt": "2026-09-16T03:04:42Z",
+      "count": 18,
+      "scope": "Models, command line tools and tool connections"
+    },
+    {
+      "name": "skills",
+      "collectedAt": "2026-09-16T03:04:42Z",
+      "count": 20,
+      "scope": "Skill definitions found in local skill roots"
+    },
+    {
+      "name": "agents",
+      "collectedAt": "2026-09-16T03:04:42Z",
+      "count": 8,
+      "scope": "Agent definitions found in local agent roots"
+    },
+    {
+      "name": "harness",
+      "collectedAt": "2026-09-16T03:04:42Z",
+      "count": 6,
+      "scope": "Hooks, rules and instruction files"
+    },
+    {
+      "name": "automation",
+      "collectedAt": "2026-09-16T03:04:42Z",
+      "count": 9,
+      "scope": "Scheduled jobs registered with the local scheduler"
+    }
+  ],
+  "machines": {
+    "main": {
+      "id": "main",
+      "status": "observed",
+      "statusLabel": "Scanned locally, read only.",
+      "checkedAt": "2026-09-16T03:04:42Z",
+      "architecture": "arm64",
+      "os": "macOS 15.5",
+      "jobCount": 7,
+      "loadedJobCount": 7,
+      "runningJobCount": 1,
+      "skillCount": 14,
+      "runtimes": [
+        "claude",
+        "codex",
+        "gemini"
+      ]
+    },
+    "laptop": {
+      "id": "laptop",
+      "status": "observed",
+      "statusLabel": "Scanned over SSH, read only.",
+      "checkedAt": "2026-09-16T03:00:42Z",
+      "architecture": "arm64",
+      "os": "Ubuntu 24.04",
+      "jobCount": 2,
+      "loadedJobCount": 1,
+      "runningJobCount": 0,
+      "skillCount": 8,
+      "runtimes": [
+        "claude"
+      ]
+    }
+  },
+  "notes": [
+    "This is demo data. Every agent, tool and job on this page is invented.",
+    "A real scan reads names, versions and trigger metadata only. Prompts, file contents and credentials are never collected.",
+    "Connection entries record only that a name is configured. Authentication and reachability were not tested.",
+    "Jobs matching a private pattern are published with an opaque id and a generic name: 1 job."
+  ]
+}
